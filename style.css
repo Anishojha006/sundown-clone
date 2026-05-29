@@ -228,9 +228,9 @@ line-height: 2vw;
   position: absolute;
   border-radius: 50%;
   background:linear-gradient(to top,#FE320A,#ed6c10);
-  top: 58%;
+  top: 48%;
   left: 25%;
-  filter:blur(30px);
+  filter:blur(18px);
   animation-name: gooey;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
@@ -244,7 +244,7 @@ line-height: 2vw;
     
   }
   to{
-   transform: translate(-10%,10%) skew(-12deg);
+   transform: translate(-10%,10%) skew(-10deg);
    
   }
 }
@@ -252,7 +252,7 @@ line-height: 2vw;
   height: 100vh;
   width: 100%;
   background-color: white;
-  padding: 4vw 0;
+  padding: 01 4vw;
 }
 #page3 .elem{
   min-height: 150px;

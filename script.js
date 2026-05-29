@@ -4,7 +4,7 @@
     smooth: true
   })
 
-let firstElem = document.querySelector("#elem1");
-console.log(firstElem);
-console.log(firstElem.getAttribute("id"));
+let elem = document.querySelector("#elem1");
+console.log(elem.getAttribute("data-image"));
+
 
