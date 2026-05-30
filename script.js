@@ -1,10 +1,34 @@
 
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-  })
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('#main'),
+//   smooth: true
+// })
+let imgBox = document.querySelector("#fixed-image");
+let elem = document.querySelectorAll(".elem");
+let container = document.querySelector("#elem-container");
+elem.forEach((e) => {
+  console.log(e);
 
-let elem = document.querySelector("#elem1");
-console.log(elem.getAttribute("data-image"));
+  e.addEventListener("mouseenter", function () {
+    imgBox.innerHTML = "";
+    let imgLink = e.getAttribute("data-image");
+    console.log(imgLink);
+    let imgTag = document.createElement("img");
+    imgTag.setAttribute("src", imgLink);
+    imgBox.appendChild(imgTag);
+    console.log(imgBox);
+
+  });
+})
+console.log(imgBox);
+
+container.addEventListener("mouseenter", function () {
+  imgBox.style.display = "flex"
+
+})
+container.addEventListener("mouseleave", function () {
+  imgBox.style.display = "none";
+})
+
 
 

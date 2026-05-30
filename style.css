@@ -154,7 +154,7 @@ line-height: 2vw;
   }
 }
 #page2{
-  min-height: 100vh;
+  min-height: 125vh;
   width: 100%;
   padding: 8vw 0;
   position: relative;
@@ -280,4 +280,26 @@ line-height: 2vw;
 }
 .elem:hover .overlay{
   top: 0;
+}
+#elem-container{
+
+}
+#fixed-image{
+  height: 30vw;
+  width: 24vw;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 9;
+  left: 50%;
+  top: 25%;
+  display: none;
+  overflow: hidden;
+  border-radius: 2rem;
+  pointer-events: none;
+}
+#fixed-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
