@@ -15,12 +15,14 @@ html, body {
   height: 100%;
 }
 #main{
-  background-color: #EFEAE3;
+  position: relative;
+  z-index: 10;
 }
 #page1{
   min-height: 100vh;
   position: relative;
   padding: 0 2vw;
+  background-color: #EFEAE3;
 }
 nav{
   height: 100px;
@@ -158,6 +160,7 @@ line-height: 2vw;
   width: 100%;
   padding: 8vw 0;
   position: relative;
+  background-color: #EFEAE3;
 }
 #moving-text{
   white-space: nowrap;
@@ -202,7 +205,7 @@ line-height: 2vw;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 9;
+  z-index: 15;
 }
 #page-2-bottom h1{
   font-size: 4vw;
@@ -221,6 +224,7 @@ line-height: 2vw;
   font-weight: 400;
   margin-top: 2vw;
   font-size: 1vw;
+  background-color: #EFEAE3;
 }
 #page2 .gooey{
   height: 32vw;
@@ -236,6 +240,7 @@ line-height: 2vw;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  z-index: 13;
 
 }
 @keyframes gooey {
@@ -263,6 +268,7 @@ line-height: 2vw;
   align-items: center;
   padding: 0 2vw;
   overflow: hidden;
+  background-color: #EFEAE3;
 }
 .elem h2{
   font-size: 2.6vw;
@@ -281,15 +287,12 @@ line-height: 2vw;
 .elem:hover .overlay{
   top: 0;
 }
-#elem-container{
-
-}
 #fixed-image{
   height: 30vw;
   width: 24vw;
   border-radius: 10px;
   position: fixed;
-  z-index: 9;
+  z-index: 99;
   left: 50%;
   top: 25%;
   display: none;
@@ -302,4 +305,41 @@ line-height: 2vw;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+#page4{
+  height: 60vh;
+  width: 100%;
+  background-color: #EFEAE3;
+}
+#page5{
+  height: 100vh;
+  width: 100%;
+  
+}
+#footer{
+  position: fixed;
+  height: 105vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 9;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding:1vw 3vw;
+}
+
+#footer h1{
+  font-size: 24vw;
+}
+#footer-div{
+  height: 20vh;
+  width: 100%;
+  background-color: red;
+}
+#footer-bottom{
+  border-top: 1px solid  #dadada;
+  height: 10vh;
+  width: 100%;
 }
