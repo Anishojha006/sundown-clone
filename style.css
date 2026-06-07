@@ -257,7 +257,6 @@ line-height: 2vw;
   height: 100vh;
   width: 100%;
   background-color: white;
-  padding: 01 4vw;
 }
 #page3 .elem{
   min-height: 150px;
@@ -307,10 +306,37 @@ line-height: 2vw;
   object-position: center;
 }
 #page4{
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: #EFEAE3;
+  margin-top: 41.5vh;
+  padding:8vw 2vw;
 }
+ .swiper {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      width: 30%;
+    }
 #page5{
   height: 100vh;
   width: 100%;
@@ -329,9 +355,8 @@ line-height: 2vw;
   flex-direction: column;
   padding:1vw 3vw;
 }
-
 #footer h1{
-  font-size: 24vw;
+  font-size: 23vw;
 }
 #footer-div{
   height: 20vh;
