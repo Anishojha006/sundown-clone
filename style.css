@@ -2,6 +2,7 @@
   font-family: MyFont;
   src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -10,21 +11,25 @@
   user-select: none;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
-#main{
+
+#main {
   position: relative;
   z-index: 10;
 }
-#page1{
+
+#page1 {
   min-height: 100vh;
   position: relative;
   padding: 0 2vw;
-  background-color: #EFEAE3;
+  background-color: #efeae3;
 }
-nav{
+
+nav {
   height: 100px;
   width: 100%;
   display: flex;
@@ -32,12 +37,14 @@ nav{
   justify-content: space-between;
   padding: 2vw 0;
 }
-#nav-part2{
+
+#nav-part2 {
   display: flex;
   align-items: center;
   gap: 1vw;
 }
-#nav-part2 h4{
+
+#nav-part2 h4 {
   padding: 10px 20px;
   border: 1px solid rgba(0, 0, 0, 0.715);
   border-radius: 50px;
@@ -48,7 +55,8 @@ nav{
   overflow: hidden;
   /* font-size: 18px; */
 }
-#nav-part2 h4::after{
+
+#nav-part2 h4::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -59,20 +67,24 @@ nav{
   border-radius: 50%;
   transition: all ease 0.4s;
 }
-#nav-part2 h4:hover::after{
-bottom: 0;
-border-radius: 0;
+
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
 }
-#nav-part2 h4 a{
+
+#nav-part2 h4 a {
   color: #000000bb;
-text-decoration: none;
-z-index: 9;
-position: relative;
+  text-decoration: none;
+  z-index: 9;
+  position: relative;
 }
-#nav-part2 h4:hover a{
+
+#nav-part2 h4:hover a {
   color: white;
 }
-#center{
+
+#center {
   height: 65vh;
   width: 100%;
   display: flex;
@@ -81,57 +93,64 @@ position: relative;
   border-bottom: 1px solid #00003c;
   padding-bottom: 2.5vw;
 }
-#left h3{
-width: 25vw;
-font-size: 1.8vw;
-line-height: 2vw;
+
+#left h3 {
+  width: 25vw;
+  font-size: 1.8vw;
+  line-height: 2vw;
 }
-#center h1{
+
+#center h1 {
   font-size: 9vw;
   line-height: 7vw;
   text-align: right;
 }
-#page1 video{
+
+#page1 video {
   border-radius: 30px;
   width: 100%;
   margin-top: 4vw;
   position: relative;
 }
-#hero-shape{
+
+#hero-shape {
   position: absolute;
   width: 46vw;
   height: 36vw;
   right: 0;
   top: 70vh;
 }
-#hero1{
+
+#hero1 {
   height: 100%;
   width: 100%;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  background-color: #FE320C;
-  filter:blur(10px);
+  background-color: #fe320c;
+  filter: blur(10px);
   position: absolute;
 }
-#hero2{
+
+#hero2 {
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
-   background: linear-gradient(#FE320C,#f65b07);
-  filter:blur(25px);
+  background: linear-gradient(#fe320c, #f65b07);
+  filter: blur(25px);
   position: absolute;
-    animation-name:Anime2;
+  animation-name: Anime2;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-#hero3{
+
+#hero3 {
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
-  background: linear-gradient(#FE320C,#f65b07);
-  filter:blur(25px);
+  background: linear-gradient(#fe320c, #f65b07);
+  filter: blur(25px);
   position: absolute;
   animation-name: Anime;
   animation-duration: 5s;
@@ -139,37 +158,45 @@ line-height: 2vw;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+
 @keyframes Anime {
-  from{
-    transform: translate( 45%,-8%);
+  from {
+    transform: translate(45%, -8%);
   }
-  to{
-    transform: translate(0%,10%);
-  }
-}
-@keyframes Anime2{
-  from{
-    transform: translate( 5%,-10%);
-  }
-  to{
-    transform: translate(-20%,30%);
+
+  to {
+    transform: translate(0%, 10%);
   }
 }
-#page2{
+
+@keyframes Anime2 {
+  from {
+    transform: translate(5%, -10%);
+  }
+
+  to {
+    transform: translate(-20%, 30%);
+  }
+}
+
+#page2 {
   min-height: 125vh;
   width: 100%;
   padding: 8vw 0;
   position: relative;
-  background-color: #EFEAE3;
+  background-color: #efeae3;
 }
-#moving-text{
+
+#moving-text {
   white-space: nowrap;
   overflow-x: auto;
 }
-#moving-text::-webkit-scrollbar{
+
+#moving-text::-webkit-scrollbar {
   display: none;
 }
-.CON{
+
+.CON {
   display: inline-block;
   white-space: nowrap;
   animation-name: move;
@@ -177,88 +204,110 @@ line-height: 2vw;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-#moving-text h1{
+
+#moving-text h1 {
   font-size: 9vw;
-  display:inline-block;
+  display: inline-block;
 }
-#circle{
+
+#circle {
   height: 70px;
   width: 70px;
-  background-color: #FE320C;
+  background-color: #fe320c;
   border-radius: 50%;
-   display:inline-block;
-   margin: 1vw 2vw;
+  display: inline-block;
+  margin: 1vw 2vw;
 }
-@keyframes move{
-  from{
+
+@keyframes move {
+  from {
     transform: translateX(0);
   }
-  to{
+
+  to {
     transform: translateX(-100%);
   }
 }
-#page-2-bottom{
+
+#page-2-bottom {
   height: 80vh;
   width: 100%;
-  padding: 4.5vw ;
+  padding: 4.5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   z-index: 15;
 }
-#page-2-bottom h1{
+
+#page-2-bottom h1 {
   font-size: 4vw;
   width: 60%;
   line-height: 4vw;
 }
-.bottom-part2{
+
+.bottom-part2 {
   width: 20%;
 }
-.bottom-part2 img{
+
+.bottom-part2 img {
   width: 100%;
   border-radius: 15px;
 }
-.bottom-part2 p{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+.bottom-part2 p {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-weight: 400;
   margin-top: 2vw;
   font-size: 1vw;
-  background-color: #EFEAE3;
+  background-color: #efeae3;
 }
-#page2 .gooey{
+
+#page2 .gooey {
   height: 32vw;
   width: 32vw;
   position: absolute;
   border-radius: 50%;
-  background:linear-gradient(to top,#FE320A,#ed6c10);
+  background: linear-gradient(to top, #fe320a, #ed6c10);
   top: 48%;
   left: 25%;
-  filter:blur(18px);
+  filter: blur(18px);
   animation-name: gooey;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   z-index: 13;
+}
 
-}
 @keyframes gooey {
-  from{
-    transform: translate(10%,-10%) skew(0deg);
-    
+  from {
+    transform: translate(10%, -10%) skew(0deg);
   }
-  to{
-   transform: translate(-10%,10%) skew(-10deg);
-   
+
+  to {
+    transform: translate(-10%, 10%) skew(-10deg);
   }
 }
-#page3{
-  height: 100vh;
+
+#page3 {
+  height: fit-content;
   width: 100%;
   background-color: white;
 }
-#page3 .elem{
+
+#page3 .elem {
   min-height: 150px;
   width: 100%;
   position: relative;
@@ -267,14 +316,16 @@ line-height: 2vw;
   align-items: center;
   padding: 0 2vw;
   overflow: hidden;
-  background-color: #EFEAE3;
+  background-color: #efeae3;
 }
-.elem h2{
+
+.elem h2 {
   font-size: 2.6vw;
   position: relative;
   z-index: 9;
 }
-.elem .overlay{
+
+.elem .overlay {
   height: 100%;
   width: 100%;
   background-color: orange;
@@ -283,10 +334,12 @@ line-height: 2vw;
   top: -100%;
   transition: all ease 0.2s;
 }
-.elem:hover .overlay{
+
+.elem:hover .overlay {
   top: 0;
 }
-#fixed-image{
+
+#fixed-image {
   height: 30vw;
   width: 24vw;
   border-radius: 10px;
@@ -299,50 +352,38 @@ line-height: 2vw;
   border-radius: 2rem;
   pointer-events: none;
 }
-#fixed-image img{
+
+#fixed-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-#page4{
+
+#page4 {
   height: 70vh;
   width: 100%;
-  background-color: #EFEAE3;
-  margin-top: 41.5vh;
-  padding:8vw 2vw;
+  background-color: #efeae3;
+  padding: 10vw 2vw;
 }
- .swiper {
-      width: 100%;
-      height: 100%;
 
-    }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background:white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+  border-left: 1px solid #867e7e;
+  width: 30%;
+  padding: 0 2vw;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper-slide {
-      width: 30%;
-    }
-#page5{
+#page5 {
   height: 100vh;
   width: 100%;
-  
 }
-#footer{
+
+#footer {
   position: fixed;
   height: 105vh;
   width: 100%;
@@ -353,18 +394,21 @@ line-height: 2vw;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding:1vw 3vw;
+  padding: 1vw 3vw;
 }
-#footer h1{
+
+#footer h1 {
   font-size: 23vw;
 }
-#footer-div{
+
+#footer-div {
   height: 20vh;
   width: 100%;
   background-color: red;
 }
-#footer-bottom{
-  border-top: 1px solid  #dadada;
+
+#footer-bottom {
+  border-top: 1px solid #dadada;
   height: 10vh;
   width: 100%;
 }
