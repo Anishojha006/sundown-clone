@@ -439,6 +439,16 @@ nav h3 {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.swiper-slide{
+  padding: 1vw 6vw;
+  padding-left: 4vw;
+}
+.swiper-slide p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
+  color: gray;
+
+}
 
 @media (max-width: 600px) {
   #page1 {
