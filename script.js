@@ -36,23 +36,33 @@ function SwipperAnimation() {
   });
 }
 SwipperAnimation();
-let fullscr = document.querySelector("#full-scr");
-let menue = document.querySelector("nav h3");
-let navimg = document.querySelector("nav img");
-let hamburger = document.querySelector("nav h3 span");
-let flag = 0;
-menue.addEventListener("click", function(){
+function menueAnimation() {
+  let fullscr = document.querySelector("#full-scr");
+  let menue = document.querySelector("nav h3");
+  let navimg = document.querySelector("nav img");
+  let hamburger = document.querySelector("nav h3 span");
+  let flag = 0;
+  menue.addEventListener("click", function () {
 
-if(flag === 0){
-   fullscr.style.top="0%";
-   navimg.style.opacity = "0";
-   flag=1;
-   hamburger.innerHTML='<i class="ri-close-large-line"></i>';
+    if (flag === 0) {
+      fullscr.style.top = "0%";
+      navimg.style.opacity = "0";
+      flag = 1;
+      hamburger.innerHTML = '<i class="ri-close-large-line"></i>';
+    }
+    else {
+      fullscr.style.top = "-100%";
+      navimg.style.opacity = "100%";
+      flag = 0;
+      hamburger.innerHTML = '<i class="ri-menu-line"></i>';
+    }
+  })
 }
-else{
-  fullscr.style.top="-100%";
-  navimg.style.opacity = "100%";
-  flag=0;
-  hamburger.innerHTML='<i class="ri-menu-line"></i>';
+menueAnimation();
+function loaderAnimation(){
+  let loader = document.querySelector("#loader");
+setTimeout(() => {
+  loader.style.top="-100%"
+}, 4000);
 }
-})
+loaderAnimation();
