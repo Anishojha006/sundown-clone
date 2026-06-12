@@ -411,12 +411,6 @@ nav h3 {
   font-size: 23vw;
 }
 
-#footer-div {
-  height: 20vh;
-  width: 100%;
-  background-color: red;
-}
-
 #footer-bottom {
   border-top: 1px solid #dadada;
   height: 10vh;
@@ -484,10 +478,11 @@ nav h3 {
 }
 
 #loader h1:nth-child(2) {
-  animation-delay: 2s ;
+  animation-delay: 2s;
 }
+
 #loader h1:nth-child(3) {
-  animation-delay: 3s ;
+  animation-delay: 3s;
 }
 
 @keyframes load {
@@ -507,21 +502,57 @@ nav h3 {
     opacity: 0;
   }
 }
-#footer-affect{
-  height: 32vw;
-    width: 32vw;
-    position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(to top, #fe320a, #ed6c10);
-    top: 48%;
-    left: 25%;
-    filter: blur(18px);
-    animation-name: gooey;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
+
+#footer-div {
+  display: flex;
+  height: 25vh;
+}
+
+#footer h1 {
+  z-index: 999;
+}
+
+#footer-div {
+  height: 20vh;
+  width: 100%;
+}
+
+#footer #shape1 {
+  position: absolute;
+  background-color: rgb(254, 51, 10);
+  filter: blur(50px);
+  top: -50%;
+  left: -20%;
+  width: 90%;
+  height: 90%;
+  animation-name: shape1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate
+}
+#footer #shape2{
+  position: absolute;
+    background-color: rgb(254, 51, 10);
+    filter: blur(50px);
+    right: -27%;
+    top: -27%;
+    width: 70%;
+    height: 90%;
+    animation-name: shape2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    z-index: 1;
+}
+
+@keyframes shape2 {
+  0%{
+    transform: rotate(30deg);
+  }
+    100%{
+    transform: rotate(45deg);
+  }
 }
 
 
@@ -667,9 +698,9 @@ nav h3 {
     animation-direction: alternate;
     z-index: 13;
   }
- #loader h1 {
-  font-size: 10vw;
- }
-}
 
+  #loader h1 {
+    font-size: 10vw;
+  }
+}
 /* continue from 3:32 */
