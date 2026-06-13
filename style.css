@@ -404,45 +404,81 @@ nav h3 {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 1vw 3vw;
+  padding: 1vw 1vw;
+  padding-top: 6vw;
 }
-.email{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.email {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
-#footer .text{
+#footer .text {
   z-index: 99;
   display: flex;
   justify-content: center;
-  gap:55vw;
+  gap: 55vw;
   align-items: center;
- margin-top: 3vw;
- margin-left: 2vw;
+  margin-top: 3vw;
+  margin-left: 2vw;
 }
-
-#footer #email p{
- font-size: 1.7vw;
- font-weight: 300;
- width: 90%;
- 
+#email{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: fit-content;
+  padding: 3vw;
 }
-.text h2{
+#footer #email p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.4vw;
+  font-weight: 300;
+  font-weight: 300;
+}
+#email h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  border-bottom: 1px solid rgba(211, 205, 193, 0.875);
+  padding-bottom: 0.6vw;
+  letter-spacing: 1px;
+  font-size: 0.9vw;
+  font-weight: 600;
+  
+}
+.text h2 {
   font-size: 2.5vw;
 }
-.text h6{
+.text h6 {
   margin-top: 0.6vw;
   font-size: 1vw;
   font-weight: 100;
+  color: rgba(211, 205, 193, 0.875);
 }
 #footer h1 {
   font-size: 23vw;
 }
-
 #footer-bottom {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-top: 1px solid #dadada;
   height: 10vh;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1vw;
+  letter-spacing: 0.1vw;
+  font-weight: 100;
+  font-size: 1.3vw;
 }
-
+#footer>h1{
+  border-bottom: 1px solid rgba(211, 205, 193, 0.875);
+}
 #full-scr {
   height: 100vh;
   width: 100%;
@@ -459,7 +495,7 @@ nav h3 {
   padding-right: 1rem;
   height: 50%;
   width: 100%;
-  background-color: #EFEAE3;
+  background-color: #efeae3;
   transition: all ease 0.6s;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -471,10 +507,11 @@ nav h3 {
 }
 
 .swiper-slide p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   font-weight: 100;
   color: gray;
-
 }
 
 #loader {
@@ -555,32 +592,31 @@ nav h3 {
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate
+  animation-direction: alternate;
 }
-#footer #shape2{
+#footer #shape2 {
   position: absolute;
-    background-color: rgb(254, 51, 10);
-    filter: blur(50px);
-    right: -27%;
-    top: -27%;
-    width: 70%;
-    height: 90%;
-    animation-name: shape2;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: rgb(254, 51, 10);
+  filter: blur(50px);
+  right: -27%;
+  top: -27%;
+  width: 70%;
+  height: 90%;
+  animation-name: shape2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes shape2 {
-  0%{
+  0% {
     transform: rotate(30deg);
   }
-    100%{
+  100% {
     transform: rotate(45deg);
   }
 }
-
 
 @media (max-width: 600px) {
   #page1 {
@@ -590,8 +626,8 @@ nav h3 {
   }
 
   nav {
-    padding: 8vw 5VW;
-    background-color: #EFEAE3;
+    padding: 8vw 5vw;
+    background-color: #efeae3;
   }
 
   nav img {
@@ -677,7 +713,6 @@ nav h3 {
     font-size: 8.2vw;
     width: 100%;
     line-height: 9vw;
-
   }
 
   .bottom-part2 {
