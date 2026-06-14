@@ -59,27 +59,36 @@ function menueAnimation() {
   })
 }
 menueAnimation();
-function loaderAnimation(){
+function loaderAnimation() {
   let loader = document.querySelector("#loader");
-setTimeout(() => {
-  loader.style.top="-100%"
-}, 4000);
+  setTimeout(() => {
+    loader.style.top = "-100%"
+  }, 4000);
 }
 loaderAnimation();
 let options = document.querySelectorAll("#options #heading h1");
 console.log(options);
-options.forEach((e)=>{
-  e.addEventListener("click",function(){
-    if(e.classList.contains("h1-color")){
-    e.classList.toggle("h1-color");
-   e.style.marginLeft = "0%";
+options.forEach((e) => {
+  e.addEventListener("click", function () {
+    let ChangedId;
+    if (e.classList.contains("h1-color")) {
+      e.classList.remove("h1-color");
+      e.style.marginLeft = "0%";
+      ChangedId = e.id;
     }
-    else{
-       e.classList.toggle("h1-color");
-   e.style.marginLeft = "3vw";
+    else {
+      e.classList.add("h1-color");
+      let ChangedId = e.id;
     }
+    options.forEach((e) => {
+      if (e.id !== ChangedId) {
+        e.classList.add("h1-color");
+        e.style.marginLeft = "3vw";
+      }
 
-    
-  
+    })
+
+
+
   })
 })
