@@ -66,3 +66,20 @@ setTimeout(() => {
 }, 4000);
 }
 loaderAnimation();
+let options = document.querySelectorAll("#options #heading h1");
+console.log(options);
+options.forEach((e)=>{
+  e.addEventListener("click",function(){
+    if(e.classList.contains("h1-color")){
+    e.classList.toggle("h1-color");
+   e.style.marginLeft = "0%";
+    }
+    else{
+       e.classList.toggle("h1-color");
+   e.style.marginLeft = "3vw";
+    }
+
+    
+  
+  })
+})

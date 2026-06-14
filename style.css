@@ -371,10 +371,22 @@ nav h3 {
   width: 100%;
   background-color: #efeae3;
   padding: 10vw 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vw;
+  height: fit-content;
+  
 }
-
+#page4 > h3 span {
+  border-radius: 50%;
+  height: 1vw;
+  width: 1vw;
+  display: inline-block;
+  background: orange;
+}
 .swiper-wrapper {
-  left: -28%;
+  left: -33%;
 }
 
 .swiper {
@@ -386,6 +398,63 @@ nav h3 {
   border-left: 1px solid #867e7e;
   width: 30%;
   padding: 0 2vw;
+}
+
+#page3-2{
+  background-color:#EFEAE3;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding: 2vw;
+}
+
+#page3-2 #box{
+  background-color: black;
+  color: white;
+  border-radius:16px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#page3-2 #box #left{
+  padding: 10vw;
+  width: 46.6%;
+}
+#page3-2 #box #right{
+  overflow: hidden;
+  background-color: black;
+  border-radius: 2vw;
+}
+#page3-2 #box #right img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+
+#left #options #heading{
+  border-left: 2px solid  #504A45;
+}
+#left #options{
+  color: white;
+}
+#left #options h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 4.6vw;
+  line-height: 6vw;
+  font-weight: 400;
+  margin-left: 3vw;
+  
+  
+}
+.h1-color{
+  color: rgb(80, 74, 69); 
+  
+}
+
+#left #options p{
+  color: #EFEAE3;
+  padding-top: 1vw;
 }
 
 #page5 {
@@ -430,7 +499,7 @@ nav h3 {
   margin-top: 3vw;
   margin-left: 2vw;
 }
-#email{
+#email {
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
@@ -438,19 +507,40 @@ nav h3 {
   padding: 3vw;
 }
 #footer #email p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 1.4vw;
   font-weight: 300;
   font-weight: 300;
 }
 #email h6 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   border-bottom: 1px solid rgba(211, 205, 193, 0.875);
   padding-bottom: 0.6vw;
   letter-spacing: 1px;
   font-size: 0.9vw;
   font-weight: 600;
-  
 }
 .text h2 {
   font-size: 2.5vw;
@@ -465,18 +555,29 @@ nav h3 {
   font-size: 23vw;
 }
 #footer-bottom {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  border-top: 1px solid #dadada;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   height: 10vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 1vw;
+  padding-top: 1.3vw;
+  padding-bottom: 2vw;
   letter-spacing: 0.1vw;
   font-weight: 100;
   font-size: 1.3vw;
 }
-#footer>h1{
+#footer > h1 {
   border-bottom: 1px solid rgba(211, 205, 193, 0.875);
 }
 #full-scr {
