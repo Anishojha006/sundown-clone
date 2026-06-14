@@ -376,15 +376,17 @@ nav h3 {
   justify-content: center;
   gap: 3vw;
   height: fit-content;
-  
+
 }
-#page4 > h3 span {
+
+#page4>h3 span {
   border-radius: 50%;
   height: 1vw;
   width: 1vw;
   display: inline-block;
   background: orange;
 }
+
 .swiper-wrapper {
   left: -33%;
 }
@@ -400,59 +402,110 @@ nav h3 {
   padding: 0 2vw;
 }
 
-#page3-2{
-  background-color:#EFEAE3;
+#page3-2 {
+  background-color: #EFEAE3;
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
+  height: 110vh;
   padding: 2vw;
+  gap: 5vw;
 }
 
-#page3-2 #box{
+#pg-4-btn {
+  width: 9vw;
+  height: 2vw;
+}
+
+#page3-2 #pg-4-btn h4 {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.715);
+  border-radius: 50px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.852);
+  position: relative;
+  transition: all ease 0.4s;
+  overflow: hidden;
+
+
+}
+
+#page3-2 #pg-4-btn h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+
+#page3-2 #pg-4-btn h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+#page3-2 #pg-4-btn h4 a{
+  
+  text-decoration: none;
+  z-index: 9;
+  position: relative;
+}
+#page3-2 #pg-4-btn h4:hover a{
+  color: white;
+}
+
+#page3-2 #box {
   background-color: black;
   color: white;
-  border-radius:16px;
+  border-radius: 16px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
-#page3-2 #box #left{
+
+#page3-2 #box #left {
   padding: 10vw;
   width: 46.6%;
 }
-#page3-2 #box #right{
+
+#page3-2 #box #right {
   overflow: hidden;
   background-color: black;
   border-radius: 2vw;
 }
-#page3-2 #box #right img{
- height: 100%;
- width: 100%;
- object-fit: cover;
- object-position: center;
+
+#page3-2 #box #right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-#left #options #heading{
-  border-left: 2px solid  #504A45;
+#left #options #heading {
+  border-left: 2px solid #504A45;
 }
-#left #options{
+
+#left #options {
   color: white;
 }
-#left #options h1{
+
+#left #options h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 4.6vw;
   line-height: 6vw;
   font-weight: 400;
   margin-left: 3vw;
-  
-  
-}
-.h1-color{
-  color: rgb(80, 74, 69); 
-  
+
+
 }
 
-#left #options p{
+.h1-color {
+  color: rgb(80, 74, 69);
+
+}
+
+#left #options p {
   color: #EFEAE3;
   padding-top: 1vw;
 }
@@ -476,6 +529,7 @@ nav h3 {
   padding: 1vw 1vw;
   padding-top: 6vw;
 }
+
 .email {
   font-family:
     system-ui,
@@ -490,6 +544,7 @@ nav h3 {
     "Helvetica Neue",
     sans-serif;
 }
+
 #footer .text {
   z-index: 99;
   display: flex;
@@ -499,6 +554,7 @@ nav h3 {
   margin-top: 3vw;
   margin-left: 2vw;
 }
+
 #email {
   display: flex;
   flex-direction: column;
@@ -506,6 +562,7 @@ nav h3 {
   width: fit-content;
   padding: 3vw;
 }
+
 #footer #email p {
   font-family:
     system-ui,
@@ -523,6 +580,7 @@ nav h3 {
   font-weight: 300;
   font-weight: 300;
 }
+
 #email h6 {
   font-family:
     system-ui,
@@ -542,18 +600,22 @@ nav h3 {
   font-size: 0.9vw;
   font-weight: 600;
 }
+
 .text h2 {
   font-size: 2.5vw;
 }
+
 .text h6 {
   margin-top: 0.6vw;
   font-size: 1vw;
   font-weight: 100;
   color: rgba(211, 205, 193, 0.875);
 }
+
 #footer h1 {
   font-size: 23vw;
 }
+
 #footer-bottom {
   font-family:
     system-ui,
@@ -577,9 +639,11 @@ nav h3 {
   font-weight: 100;
   font-size: 1.3vw;
 }
-#footer > h1 {
+
+#footer>h1 {
   border-bottom: 1px solid rgba(211, 205, 193, 0.875);
 }
+
 #full-scr {
   height: 100vh;
   width: 100%;
@@ -695,6 +759,7 @@ nav h3 {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 #footer #shape2 {
   position: absolute;
   background-color: rgb(254, 51, 10);
@@ -714,6 +779,7 @@ nav h3 {
   0% {
     transform: rotate(30deg);
   }
+
   100% {
     transform: rotate(45deg);
   }
@@ -865,4 +931,5 @@ nav h3 {
     font-size: 10vw;
   }
 }
+
 /* continue from 3:32 */
