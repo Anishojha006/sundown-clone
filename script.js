@@ -70,7 +70,7 @@ let options = document.querySelectorAll("#heading h1");
 let paragraphs = document.querySelectorAll("#page3-2 #options p");
 
 options.forEach((option) => {
-  option.addEventListener("click", function () {
+option.addEventListener("click", function () {
 
     options.forEach((item) => {
       item.classList.add("h1-color");
