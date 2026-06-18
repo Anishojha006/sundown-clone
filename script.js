@@ -1,8 +1,8 @@
 
 function Page4andOtherAnimation() {
-    const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
+    // const scroll = new LocomotiveScroll({
+    // el: document.querySelector('#main'),
+    // smooth: true
   })
   let imgBox = document.querySelector("#fixed-image");
   let elem = document.querySelectorAll(".elem");
