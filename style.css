@@ -939,14 +939,17 @@ nav h3 {
     flex-direction: column;
     margin-top: 20vw;
   }
+  #pg-4-btn{
+    width: fit-content;
+  }
   #page3-2 #box #left{
-    width: 100%;
+    width: fit-content;
   }
   #heading{
     margin-bottom: 5vw;
   }
   #page3-2 #pg-4-btn h4{
-    width: 34vw;
+    width:fit-content;
   }
   .swiper-slide{
     padding: 0;
@@ -977,7 +980,6 @@ nav h3 {
     width: 100%;   
     overflow: hidden;      
   }
-  
   #page5 {
     min-height: 76vh;
   }
