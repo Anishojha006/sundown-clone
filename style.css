@@ -496,13 +496,14 @@ nav h3 {
   line-height: 6vw;
   font-weight: 400;
   margin-left: 3vw;
-
-
 }
 
 .h1-color {
   color: rgb(80, 74, 69);
 
+}
+.display{
+  display: none;
 }
 
 #left #options p {

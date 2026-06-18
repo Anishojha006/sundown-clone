@@ -1,9 +1,9 @@
 
 function Page4andOtherAnimation() {
-  //   const scroll = new LocomotiveScroll({
-  //   el: document.querySelector('#main'),
-  //   smooth: true
-  // })
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+  })
   let imgBox = document.querySelector("#fixed-image");
   let elem = document.querySelectorAll(".elem");
   let container = document.querySelector("#elem-container");
@@ -66,29 +66,40 @@ function loaderAnimation() {
   }, 4000);
 }
 loaderAnimation();
-let options = document.querySelectorAll("#options #heading h1");
-console.log(options);
-options.forEach((e) => {
-  e.addEventListener("click", function () {
-    let ChangedId;
-    if (e.classList.contains("h1-color")) {
-      e.classList.remove("h1-color");
-      e.style.marginLeft = "0%";
-      ChangedId = e.id;
+let options = document.querySelectorAll("#heading h1");
+let paragraphs = document.querySelectorAll("#page3-2 #options p");
+
+options.forEach((option) => {
+  option.addEventListener("click", function () {
+
+    options.forEach((item) => {
+      item.classList.add("h1-color");
+      item.style.marginLeft = "3vw";
+    });
+
+    this.classList.remove("h1-color");
+    this.style.marginLeft = "0";
+
+    paragraphs.forEach((p) => {
+      p.classList.add("display");
+    });
+
+    if (this.id === "one") {
+      document
+        .querySelector(".design-content")
+        .classList.remove("display");
     }
-    else {
-      e.classList.add("h1-color");
-      let ChangedId = e.id;
+
+    if (this.id === "two") {
+      document
+        .querySelector(".project-content")
+        .classList.remove("display");
     }
-    options.forEach((e) => {
-      if (e.id !== ChangedId) {
-        e.classList.add("h1-color");
-        e.style.marginLeft = "3vw";
-      }
 
-    })
-
-
-
-  })
-})
+    if (this.id === "three") {
+      document
+        .querySelector(".execution-content")
+        .classList.remove("display");
+    }
+  });
+});
